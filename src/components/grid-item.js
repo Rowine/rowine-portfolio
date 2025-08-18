@@ -2,7 +2,6 @@ import Image from 'next/image';
 import { Box, Text, LinkBox, LinkOverlay, Badge, Button, HStack } from '@chakra-ui/react';
 import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa';
 import { Global } from '@emotion/react';
-import Link from 'next/link';
 import WorkCarousel from './work-carousel';
 
 export const GridItem = ({ children, href, title, thumbnail }) => (
