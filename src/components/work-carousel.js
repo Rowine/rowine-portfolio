@@ -33,7 +33,7 @@ const WorkCarousel = ({ images, title }) => {
   return (
     <>
       <Box position="relative" width="100%">
-        <Box 
+        <Box
           onClick={() => setIsModalOpen(true)}
           cursor="pointer"
           _hover={{ opacity: 0.9 }}
@@ -75,26 +75,28 @@ const WorkCarousel = ({ images, title }) => {
         )}
       </Box>
 
-      <Modal 
-        isOpen={isModalOpen} 
+      <Modal
+        isOpen={isModalOpen}
         onClose={() => setIsModalOpen(false)}
         size="6xl"
         isCentered
       >
         <ModalOverlay bg="blackAlpha.800" />
         <ModalContent bg="transparent" boxShadow="none" maxW="90vw" maxH="90vh">
-          <ModalCloseButton 
-            color="white" 
+          <ModalCloseButton
+            color="white"
             bg="whiteAlpha.200"
             borderRadius="full"
             size="lg"
-            m={4}
+            top={-10}
+            right={2}
+            position="fixed"
             _hover={{ bg: 'whiteAlpha.300' }}
           />
           <ModalBody p={0} display="flex" justifyContent="center" alignItems="center">
-            <Box 
-              position="relative" 
-              width="100%" 
+            <Box
+              position="relative"
+              width="100%"
               height="100%"
               display="flex"
               justifyContent="center"
@@ -103,7 +105,7 @@ const WorkCarousel = ({ images, title }) => {
               <Image
                 src={images[currentIndex]}
                 alt={`${title} - Image ${currentIndex + 1} (Full Size)`}
-                style={{ 
+                style={{
                   maxWidth: '100%',
                   maxHeight: '85vh',
                   objectFit: 'contain',
@@ -121,8 +123,10 @@ const WorkCarousel = ({ images, title }) => {
                       e.stopPropagation();
                       previousImage();
                     }}
-                    position="absolute"
-                    left={4}
+                    position="fixed"
+                    left="5%"
+                    top="50%"
+                    transform="translateY(-50%)"
                     {...buttonStyles}
                     size="lg"
                   />
@@ -133,8 +137,10 @@ const WorkCarousel = ({ images, title }) => {
                       e.stopPropagation();
                       nextImage();
                     }}
-                    position="absolute"
-                    right={4}
+                    position="fixed"
+                    right="5%"
+                    top="50%"
+                    transform="translateY(-50%)"
                     {...buttonStyles}
                     size="lg"
                   />

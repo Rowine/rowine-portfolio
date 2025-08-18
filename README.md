@@ -1,36 +1,94 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 👋 Welcome to My Portfolio!
 
-## Getting Started
+Hey there! I'm Rowine, a passionate developer who loves building cool stuff on the web. This is my personal portfolio built with Next.js and some awesome modern tech. Feel free to explore!
 
-First, run the development server:
+## 🎨 What's Inside?
+
+This portfolio showcases my projects and skills, featuring:
+
+- 🚀 Interactive project showcases with image carousels
+- 🌙 Clean, modern design with smooth animations
+- 📱 Fully responsive for all devices
+- 🖼️ Full-screen project previews
+- 🔗 Direct links to live projects and GitHub repos
+
+## 💻 Featured Projects
+
+### Rice Pest & Disease Detection
+
+A smart system that helps identify rice plant diseases and pests using AI. Built with:
+
+- React.js for the frontend magic
+- TensorFlow.js for AI detection
+- Firebase for the backend
+- Beautiful UI for easy interaction
+
+_More projects coming soon!_ 👨‍💻
+
+## 🛠️ Tech Stack
+
+I love working with modern tools:
+
+- **Next.js 14** - Because speed matters!
+- **Chakra UI** - For that sleek, modern look
+- **React** - My go-to for building awesome UIs
+- Plus some other cool libraries for animations and effects
+
+## 🚀 Want to Run This Locally?
+
+If you're curious about how it works, here's how to get it running:
+
+1. Clone it:
+
+```bash
+git clone https://github.com/Rowine/next-portfolio
+cd next-portfolio
+```
+
+2. Install the goodies:
+
+```bash
+npm install
+# or
+yarn install
+# or
+bun install
+```
+
+3. Fire it up:
 
 ```bash
 npm run dev
 # or
 yarn dev
 # or
-pnpm dev
-# or
 bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+4. Check it out at [http://localhost:3000](http://localhost:3000) 🎉
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## 📬 Let's Connect!
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Feel free to reach out if you want to:
 
-## Learn More
+- 👥 Collaborate on projects
+- 💬 Chat about tech
+- 🤝 Discuss opportunities
+- ☕ Just say hi!
 
-To learn more about Next.js, take a look at the following resources:
+You can find me on:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- [GitHub](https://github.com/Rowine)
+- [LinkedIn](https://www.linkedin.com/in/rowinemabiog/)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 🙏 Thanks for Stopping By!
 
-## Deploy on Vercel
+If you liked what you saw, feel free to:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- ⭐ Star this repo
+- 🍴 Fork it for your own portfolio
+- 📫 Reach out to me
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+
+Built by Rowine

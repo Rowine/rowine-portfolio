@@ -37,8 +37,9 @@ const Works = () => {
             thumbnails={[thumbInternship1, thumbInternship2, thumbInternship3]}
             isDown={false}
           >
-            A YOLOv8-based rice pest and disease detection system made using
-            React.js, TensorFlow.js, and Firebase.
+            A web application for interns to document their internship experience
+            and track their progress. Made using Next.js, Shadcn UI, and
+            Supabase.
           </WorkGridItem>
         </SimpleGrid>
       </Section>
