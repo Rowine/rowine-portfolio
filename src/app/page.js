@@ -27,7 +27,7 @@ export default function Home() {
         mb={6}
         align="center"
       >
-
+        A developer who loves to code and drink coffee. Let's chat about my experiences over a virtual coffee! ☕
       </Box>
       <Box display={{ md: 'flex' }}>
         <Box flexGrow={1}>
