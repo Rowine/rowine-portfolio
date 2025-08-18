@@ -27,7 +27,7 @@ export default function Home() {
         mb={6}
         align="center"
       >
-        Hello, I&apos;m a Computer Engineering Student from PUP!
+
       </Box>
       <Box display={{ md: 'flex' }}>
         <Box flexGrow={1}>
@@ -67,9 +67,9 @@ export default function Home() {
           University of the Philippines. He have experience working with
           Javascript, React, and Python. He is also interested in learning new
           technologies and frameworks. He is a self-taught developer and learned
-          most of my skills through online tutorials and documentations. He is
+          most of his skills through online tutorials and documentations. He is
           also a member of the{' '}
-          <Link href="https://puptpg.org/">PUP The Programmers Guild</Link>. He
+          <Link href="https://www.linkedin.com/company/the-programmers-guild">PUP The Programmers Guild</Link> and a Frontend Lead Associate at <Link href="https://www.linkedin.com/company/gdgpup">Google Developer Student Clubs - PUP</Link>. He
           had internship experience as a Frontend Developer at{' '}
           <Link href="https://pixel8.ph/">
             Pixel8 Web Solutions & Consultancy Inc.
