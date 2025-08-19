@@ -8,6 +8,9 @@ import thumbRice3 from '../../public/works/rice-3.png';
 import thumbInternship1 from '../../public/works/intern-1.png';
 import thumbInternship2 from '../../public/works/intern-2.png';
 import thumbInternship3 from '../../public/works/intern-3.png';
+import thumbOrganik1 from '../../public/works/organik-1.png';
+import thumbOrganik2 from '../../public/works/organik-2.png';
+import thumbOrganik3 from '../../public/works/organik-3.png';
 
 const Works = () => {
   return (
@@ -40,6 +43,18 @@ const Works = () => {
             A web application for interns to document their internship experience
             and track their progress. Made using Next.js, Shadcn UI, and
             Supabase.
+          </WorkGridItem>
+        </SimpleGrid>
+        <SimpleGrid>
+          <WorkGridItem
+            href="https://organik.vercel.app/"
+            githubHref="https://github.com/Rowine/Organik"
+            title="Organik"
+            thumbnails={[thumbOrganik1, thumbOrganik2, thumbOrganik3]}
+            isDown={false}
+          >
+            An e-commerce website for fresh produce. Made using MERN stack.
+
           </WorkGridItem>
         </SimpleGrid>
       </Section>

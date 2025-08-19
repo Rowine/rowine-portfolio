@@ -69,9 +69,9 @@ export default function Home() {
           technologies and frameworks. He is a self-taught developer and learned
           most of his skills through online tutorials and documentations. He is
           also a member of the{' '}
-          <Link href="https://www.linkedin.com/company/the-programmers-guild">PUP The Programmers Guild</Link> and a Frontend Lead Associate at <Link href="https://www.linkedin.com/company/gdgpup">Google Developer Student Clubs - PUP</Link>. He
+          <Link href="https://www.linkedin.com/company/the-programmers-guild" target="_blank">PUP The Programmers Guild</Link> and a Frontend Lead Associate at <Link href="https://www.linkedin.com/company/gdgpup" target="_blank">Google Developer Student Clubs - PUP</Link>. He
           had internship experience as a Frontend Developer at{' '}
-          <Link href="https://pixel8.ph/">
+          <Link href="https://pixel8websolutions.com/" target="_blank">
             Pixel8 Web Solutions & Consultancy Inc.
           </Link>
         </Paragraph>
@@ -81,7 +81,7 @@ export default function Home() {
           I ❤️
         </Heading>
         <Paragraph>
-          Coffee, Basketball, Video Games, Anime, Coding, Machine Learning
+          Coffee, Basketball, Running,Video Games, Anime, Coding, Machine Learning and more!
         </Paragraph>
       </Section>
       <Section delay={0.3}>
