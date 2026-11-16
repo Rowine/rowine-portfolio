@@ -14,7 +14,12 @@ import {
   Text,
   UnorderedList
 } from '@chakra-ui/react';
-import { IoLogoInstagram, IoLogoGithub, IoLogoDiscord } from 'react-icons/io5';
+import {
+  IoLogoInstagram,
+  IoLogoGithub,
+  IoLogoDiscord,
+  IoDocumentText
+} from 'react-icons/io5';
 import Section from '@/components/section';
 import Paragraph from '@/components/paragraph';
 import Works from './works';
@@ -152,6 +157,17 @@ export default function Home() {
           On the web
         </Heading>
         <List>
+          <ListItem>
+            <Link href="/Rowine_Mabiog_Resume.pdf" target="_blank">
+              <Button
+                variant="ghost"
+                colorScheme="teal"
+                leftIcon={<Icon as={IoDocumentText} mt={1} />}
+              >
+                Resume
+              </Button>
+            </Link>
+          </ListItem>
           <ListItem>
             <Link href="https://github.com/Rowine" target="_blank">
               <Button

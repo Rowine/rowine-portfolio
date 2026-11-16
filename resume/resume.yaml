@@ -1,0 +1,106 @@
+# Rebuild: pipx run rendercv render resume.yaml --output-folder out && cp out/Rowine_Mabiog_CV.pdf ../public/Rowine_Mabiog_Resume.pdf && rm -rf out
+cv:
+  name: Rowine Mabiog
+  location: Marikina, NCR
+  email: rowinemabiog@proton.me
+  phone: +63 918 464 6279
+  website: https://rowine-portfolio.vercel.app/
+  social_networks:
+    - network: LinkedIn
+      username: rowinemabiog
+    - network: GitHub
+      username: Rowine
+  sections:
+    summary:
+      - Software engineer who builds full-stack product features end to end with **TypeScript**, **Next.js**, **NestJS**, and **PostgreSQL**, from clarifying requirements and acceptance criteria to secure, tested releases. Always exploring the cutting edge of **AI-assisted development** with Claude and ChatGPT, while reviewing and validating every generated change.
+    experience:
+      - company: White Cloak Technologies, Inc.
+        position: Software Engineer
+        location: Pasig City
+        start_date: 2025-12
+        end_date: present
+        highlights:
+          - Built the **document management system** of an enterprise ERP platform, with **role-based sharing**, **tenant-scoped access control**, **e-signature** requests, PDF preview, drag-and-drop organization, and faster folder-tree queries
+          - Developed a **provider marketplace** module **end to end**, from the customer dashboard to **online payments** and **digitally signed documents**
+          - Build and maintain **application-processing portals** for a **government client**, covering deadline tracking, prioritized review queues, document signing, bug fixes, and **performance optimization**
+          - Enforce **server-side authorization** and tenant data isolation, resolve **security-scan findings**, and cover features with **unit and Playwright E2E tests**
+          - Use **AI tools** like **Claude** and **ChatGPT** in a **spec-first workflow**, defining acceptance criteria up front, then reviewing, testing, and security-checking every generated change before it ships
+          - Also contributed to a **booking** application and a **loan** application
+      - company: Pixel8 Web Solutions and Consultancy Inc.
+        position: Frontend Developer Intern
+        location: Legazpi City, Albay
+        start_date: 2023-06
+        end_date: 2023-09
+        highlights:
+          - Converted **Figma designs** into responsive and interactive web interfaces using **Vue.js**
+          - Led a team of **6 interns** in delivering frontend components and features, following **Agile methodology** with daily standups and sprint planning
+          - Developed front-end features for a **government tracking system** and a **student information system**, improving user experience and data accessibility
+    education:
+      - institution: Polytechnic University of the Philippines
+        area: Computer Engineering
+        degree: BS
+        start_date: 2023
+        end_date: 2026
+      - institution: Polytechnic University of the Philippines
+        area: Computer Engineering
+        degree: Diploma
+        start_date: 2020
+        end_date: 2023
+    projects:
+      - name: '**E-commerce Website** - [github.com/Rowine/Organik](https://github.com/Rowine/Organik)'
+        highlights:
+          - Created an e-commerce website with **PayPal API** to accept payments and built a **REST API** to handle business logic
+          - 'Tools Used: React, Tailwind, TypeScript, Express'
+      - name: '**Rice Disease Detection** - [github.com/Rowine/rice-disease-detection](https://github.com/Rowine/rice-disease-detection)'
+        highlights:
+          - Built a **Progressive Web App (PWA)** to detect rice diseases and pests, with offline support
+          - Trained a custom **YOLO detection model** using datasets on Google Colab, integrated via Roboflow API
+          - Implemented a notification system using **Semaphore SMS API** to alert users of local disease or pest outbreaks
+          - 'Tools Used: React, Zustand, Firebase, TensorFlow'
+      - name: '**Internship Tracker** - [github.com/Rowine/internship-tracker](https://github.com/Rowine/internship-tracker)'
+        highlights:
+          - Built a journal-like website for interns to record what they have learned throughout their internship
+          - 'Tools Used: Next.js, TypeScript, shadcn/ui, Supabase'
+    technologies:
+      - label: Languages
+        details: JavaScript, TypeScript, Python
+      - label: Frontend
+        details: React.js, Next.js, Tailwind CSS, Redux/RTK, Zustand, Vite, MaterialUI, ChakraUI, shadcn/ui
+      - label: Backend
+        details: Node.js, NestJS, Express.js, Prisma, REST APIs, Postman
+      - label: Database
+        details: PostgreSQL, MySQL, MongoDB, Firebase, Supabase
+      - label: Cloud & DevOps
+        details: AWS (S3, Secrets Manager, ECS), Docker
+      - label: AI Tools
+        details: Claude Code, ChatGPT, Codex
+      - label: Others
+        details: Git, Jest, Playwright, react-testing-library, Formik, Yup, styled-components, Figma
+design:
+  theme: engineeringresumes
+  page:
+    size: us-letter
+    top_margin: 0.5in
+    bottom_margin: 0.5in
+    left_margin: 0.6in
+    right_margin: 0.6in
+    show_top_note: false
+  typography:
+    line_spacing: 0.45em
+    alignment: left
+  links:
+    underline: false
+  header:
+    space_below_name: 0.4cm
+    space_below_connections: 0.4cm
+  section_titles:
+    space_above: 0.35cm
+    space_below: 0.2cm
+  sections:
+    space_between_regular_entries: 0.25cm
+    space_between_text_based_entries: 0.12cm
+  entries:
+    highlights:
+      bullet: •
+      space_above: 0.05cm
+      space_between_items: 0.05cm
