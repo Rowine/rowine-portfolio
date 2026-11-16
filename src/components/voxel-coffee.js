@@ -24,7 +24,6 @@ const VoxelCoffee = () => {
     )
   );
 
-  const [scene] = useState(new THREE.Scene());
   const [_controls, setControls] = useState();
 
   const handleWidowResize = useCallback(() => {
@@ -54,6 +53,8 @@ const VoxelCoffee = () => {
       container.appendChild(renderer.domElement);
       setRenderer(renderer);
 
+      const scene = new THREE.Scene();
+
       // 640 -> 240
       // 8   -> 6
       const scale = scH * 0.01 + 4.8;
@@ -69,8 +70,13 @@ const VoxelCoffee = () => {
       camera.lookAt(target);
       setCamera(camera);
 
-      const ambientLight = new THREE.AmbientLight(0xcccccc, 2);
+      // ponytail: ambient fill + key light parented to the camera so the visible side stays lit while it orbits
+      const ambientLight = new THREE.AmbientLight(0xffffff, 2.4);
       scene.add(ambientLight);
+      const keyLight = new THREE.DirectionalLight(0xffffff, 2.8);
+      keyLight.position.set(5, 10, 10);
+      camera.add(keyLight);
+      scene.add(camera);
 
       const controls = new OrbitControls(camera, renderer.domElement);
       controls.autoRotate = true;
@@ -81,12 +87,20 @@ const VoxelCoffee = () => {
       loadGLTFModel(scene, '/coffee.glb', {
         receiveShadow: false,
         castShadow: false
-      }).then(() => {
+      }).then(obj => {
+        if (disposed) return;
+        // the GLB is exported off-center; shift it so the orbit axis runs through the cup
+        const center = new THREE.Box3()
+          .setFromObject(obj)
+          .getCenter(new THREE.Vector3());
+        obj.position.x -= center.x;
+        obj.position.z -= center.z;
         animate();
         setLoading(false);
       });
 
       let req = null;
+      let disposed = false;
       let frame = 0;
       const animate = () => {
         req = requestAnimationFrame(animate);
@@ -110,8 +124,10 @@ const VoxelCoffee = () => {
         renderer.render(scene, camera);
       };
       return () => {
+        disposed = true;
         cancelAnimationFrame(req);
         renderer.dispose();
+        container.removeChild(renderer.domElement);
       };
     }
   }, []);
