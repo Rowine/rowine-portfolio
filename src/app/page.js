@@ -10,7 +10,9 @@ import {
   List,
   ListItem,
   Button,
-  Icon
+  Icon,
+  Text,
+  UnorderedList
 } from '@chakra-ui/react';
 import { IoLogoInstagram, IoLogoGithub, IoLogoDiscord } from 'react-icons/io5';
 import Section from '@/components/section';
@@ -27,14 +29,15 @@ export default function Home() {
         mb={6}
         align="center"
       >
-        A developer who loves to code and drink coffee. Let&apos;s chat about my experiences over a virtual coffee! ☕
+        A developer who loves to code and drink coffee. Let&apos;s chat about my
+        experiences over a virtual coffee! ☕
       </Box>
       <Box display={{ md: 'flex' }}>
         <Box flexGrow={1}>
           <Heading as="h2" variant="page-title">
             Rowine Mabiog
           </Heading>
-          <p>Full Stack Javascript Developer</p>
+          <p>Software Engineer</p>
         </Box>
         <Box
           flexShrink={0}
@@ -63,32 +66,88 @@ export default function Home() {
           About Me
         </Heading>
         <Paragraph>
-          Rowine is currently a Computer Engineering Student from Polytechnic
-          University of the Philippines. He have experience working with
-          Javascript, React, and Python. He is also interested in learning new
-          technologies and frameworks. He is a self-taught developer and learned
-          most of his skills through online tutorials and documentations. He is
-          also a member of the{' '}
-          <Link href="https://www.linkedin.com/company/the-programmers-guild" target="_blank">PUP The Programmers Guild</Link> and a Frontend Lead Associate at <Link href="https://www.linkedin.com/company/gdgpup" target="_blank">Google Developer Student Clubs - PUP</Link>. He
-          had internship experience as a Frontend Developer at{' '}
-          <Link href="https://pixel8websolutions.com/" target="_blank">
-            Pixel8 Web Solutions & Consultancy Inc.
-          </Link>
+          Rowine is a Software Engineer at{' '}
+          <Link href="https://www.whitecloak.com/" target="_blank">
+            White Cloak Technologies, Inc.
+          </Link>{' '}
+          and a Computer Engineering graduate from the Polytechnic University of
+          the Philippines. He works with TypeScript, React/Next.js, NestJS, and
+          Python, and enjoys learning new technologies and frameworks. He is a
+          self-taught developer who picked up most of his skills through online
+          tutorials and documentation. He is always exploring the cutting edge
+          of AI tools like Claude and ChatGPT, growing into AI-native
+          engineering while making sure every generated change is reviewed,
+          tested, and validated before it ships.
         </Paragraph>
       </Section>
       <Section delay={0.2}>
         <Heading as="h3" variant="section-title">
+          Experience
+        </Heading>
+        <Box mb={4}>
+          <Text fontWeight="bold">
+            Software Engineer,{' '}
+            <Link href="https://www.whitecloak.com/" target="_blank">
+              White Cloak Technologies, Inc.
+            </Link>
+          </Text>
+          <Text fontSize="sm" opacity={0.7} mb={2}>
+            Dec 2025 – Present
+          </Text>
+          <UnorderedList spacing={1}>
+            <ListItem>
+              Built the document management system of an enterprise ERP
+              platform: role-based sharing and tenant-scoped access control,
+              e-signature requests, PDF preview, drag-and-drop organization, and
+              faster folder-tree queries
+            </ListItem>
+            <ListItem>
+              Developed a provider marketplace module end to end, from the
+              customer dashboard to online payments and digitally signed
+              documents
+            </ListItem>
+            <ListItem>
+              Build and maintain application-processing portals for a government
+              client: deadline tracking, prioritized review queues, document
+              signing, bug fixes and performance optimization
+            </ListItem>
+            <ListItem>
+              Also contributed to a booking application and a loan application
+            </ListItem>
+            <ListItem>
+              Use AI tools like Claude and ChatGPT in a spec-first workflow:
+              define acceptance criteria up front, let AI draft against them,
+              then review, test and security-check every change, rejecting
+              unsafe generated code before it ships
+            </ListItem>
+          </UnorderedList>
+          <Text fontSize="sm" mt={2}>
+            Stack: TypeScript, Next.js, NestJS, Prisma, PostgreSQL
+          </Text>
+        </Box>
+        <Box>
+          <Text fontWeight="bold">
+            Frontend Developer Intern,{' '}
+            <Link href="https://pixel8websolutions.com/" target="_blank">
+              Pixel8 Web Solutions & Consultancy Inc.
+            </Link>
+          </Text>
+        </Box>
+      </Section>
+      <Section delay={0.3}>
+        <Heading as="h3" variant="section-title">
           I ❤️
         </Heading>
         <Paragraph>
-          Coffee, Basketball, Running,Video Games, Anime, Coding, Machine Learning and more!
+          Coffee, Basketball, Running,Video Games, Anime, Coding, Machine
+          Learning and more!
         </Paragraph>
       </Section>
-      <Section delay={0.3}>
+      <Section delay={0.4}>
         <Works />
       </Section>
 
-      <Section delay={0.4}>
+      <Section delay={0.5}>
         <Heading as="h3" variant="section-title">
           On the web
         </Heading>
